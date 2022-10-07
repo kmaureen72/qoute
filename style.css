@@ -11,17 +11,17 @@ body{
   align-items:center;
   justify-content: center;
   min-height: 100vh;
-  background: #4d5470;
+  background: #717892;
 }
 .wrapper{
   width: 605px;
   background: #fff;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 30px 30px 25px;
-  box-shadow: 0 12px 35px rgba(224, 204, 15, 0.1);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
 }
 header, .content :where(i, p, span){
-  color: #465179;
+  color: #202842;
 }
 .wrapper header{
   font-size: 35px;
@@ -37,14 +37,15 @@ header, .content :where(i, p, span){
 }
 .quote-area i{
   font-size: 15px;
+  display: inline;
 }
-.quote-area i:first-child{
+.qoute-area i:first-child{
   margin: 3px 10px 0 0;
 }
 .quote-area i:last-child{
   display: flex;
   margin: 0 0 3px 10px;
-  align-items: flex-end;
+  align-items:flex-end;
 }
 .quote-area .quote{
   font-size: 22px;
@@ -91,6 +92,34 @@ header, .content :where(i, p, span){
 .features ul li:first-child{
   margin-left: 0;
 }
+
+
+[id=toggle-heart] {
+  position: absolute;
+  left: -100vw;
+}
+[id=toggle-heart]:checked + label {
+  color: #e2264d;
+  will-change: font-size;
+  animation: heart 1s cubic-bezier(0.17, 0.89, 0.32, 1.49);
+}
+
+[for=toggle-heart] {
+  align-self: center;
+  color: #4d5266;
+  font-size: 2em;
+  cursor: pointer;
+}
+[for=toggle-heart]:hover{
+color:#fff;
+}
+
+@keyframes heart {
+  0%, 15% {
+    font-size: 0;
+  }
+}
+
 ul li:is(:hover, .active){
   color: #fff;
   background: #8392cf;
@@ -106,7 +135,7 @@ ul .speech.active{
   cursor: pointer;
   padding: 13px 22px;
   border-radius: 30px;
-  background: #5372F0;
+  background: #525d8b;
 }
 .buttons button.loading{
   opacity: 0.7;
