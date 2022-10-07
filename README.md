@@ -16,7 +16,7 @@ The website generates new qoute on click, it has a button for favorite qoute, us
 - code . or atom . command to open the text editor
 
 # Link to live website
-
+[https://kmaureen72.github.io/qoute/]
 ---
 # Any bugs?
  one small bug, i couldn't get the heart button to reset on generating the next qoute, if you find a way, you are welcome to assist.
